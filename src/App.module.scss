@@ -1,0 +1,101 @@
+
+.content,.footer{
+  padding: 40px;
+}
+.content{
+  display: flex;
+  margin-bottom: 150px;
+  .visualisation, .options{
+    width: 50%;
+  }
+  .visualisation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 30px;
+    height: 100%;
+    img{
+      width: 100%;
+      max-width: 500px;
+    }
+  }
+  .options{
+    .option{
+      margin-top: 8px;
+      border-radius: 4px;
+      border: 1px solid #d6d6d6;
+      background-color: #fffc;
+      padding: 0.70588rem 0.88235rem;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      box-sizing: border-box;
+      border-spacing: 0;
+      overflow: hidden;
+      cursor: pointer;
+      color: #333;
+      font-weight: 600;
+      font-size: 17px;
+      line-height: 1.23543;
+      min-height: 4.88235rem;
+      span:nth-child(1){
+        width: 70%;
+      }
+    }
+    .option.selected{
+        border-color: #0070c9;
+        border-width: 0.11765rem;
+    }
+    
+  }
+  .footer{
+    color: lightblue;
+    font-size: 30px;
+    width: 100%;
+  }
+}
+.footer{
+  position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 2.5rem;
+    color: #333;
+    border-top: 1px solid #d6d6d6;
+    border-bottom: 0;
+    background: #f8f8f8;
+    font-size: 36px;
+    font-weight: 700;
+}
+.singleOptionButtons{
+  width: 100%;
+  display: flex;
+  .button{
+    width: 50%;
+    min-height: 4.88235rem;
+    border: 1px solid #d6d6d6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0px 4px 4px 0px;
+    cursor: pointer;
+    .title{
+      font-weight: 700;
+      font-size: 18px;
+      padding-bottom: 10px;
+    }
+    &hover{
+      cursor: pointer
+    }
+  }
+  .button.selected{
+    border-color: #0070c9;
+    border-width: 0.11765rem;
+  }
+  .button:first-child{
+    border-radius: 4px 0 0 4px !important;
+  }
+}
